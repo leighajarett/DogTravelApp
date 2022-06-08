@@ -1,0 +1,20 @@
+{
+  "name": "images/71F1107A-14BB-4AA5-848C-6632A67ABB8C-L0-001",
+  "bucket": "leigha-bq-dev.appspot.com",
+  "contentType": "image/jpeg",
+  "metageneration": 1,
+  "generation": 1654189027782,
+  "storageClass": "STANDARD",
+  "contentDisposition": "inline",
+  "cacheControl": "public, max-age=3600",
+  "contentEncoding": "identity",
+  "downloadTokens": [
+    "7df144dd-b944-4166-b442-0daf38c5be91"
+  ],
+  "etag": "QKK1vifL2P/H6WGhiRMbyjmOLn8",
+  "timeCreated": "2022-06-02T16:57:07.781Z",
+  "updated": "2022-06-02T16:57:07.809Z",
+  "size": 6512654,
+  "md5Hash": "SmzVkjd/9ojko6DieR4d9A==",
+  "crc32c": "3040645272"
+}
