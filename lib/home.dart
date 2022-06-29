@@ -15,20 +15,13 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'dart:math' as math;
 
 class Home extends StatelessWidget {
-  ScrollController controller = ScrollController(initialScrollOffset: 10.0);
+  const Home({Key? key}) : super(key: key);
+
+  // ScrollController controller = ScrollController(initialScrollOffset: 10.0);
 
   @override
   Widget build(BuildContext context) {
     return Stack(children: [
-      // DraggableScrollableSheet(
-      //   initialChildSize: 1.0,
-      //   builder: (context, scrollController) {
-      //     return SingleChildScrollView(
-      //       controller: controller,
-      //       child:
-      // SizedBox(
-      //   height: 1000,
-      //   child:
       Stack(
         children: <Widget>[
           Positioned(
@@ -45,19 +38,19 @@ class Home extends StatelessWidget {
               top: 0,
               left: 200,
               child: Transform.rotate(angle: math.pi / 5, child: XDCloud())),
-          Positioned(child: XDCloud2(), top: 610, left: 5),
-          Positioned(child: XDYellowBalloon2(), top: 740, left: 280),
-          Positioned(child: XDOrangeBalloon2(), top: 510, left: 300),
-          Positioned(child: XDGreenBalloon(), top: 590, left: 50),
+          Positioned(top: 610, left: 5, child: XDCloud2()),
+          Positioned(top: 740, left: 280, child: XDYellowBalloon2()),
+          Positioned(top: 510, left: 300, child: XDOrangeBalloon2()),
+          Positioned(top: 590, left: 50, child: XDGreenBalloon()),
           Positioned(
-            child: XDGreenBalloon2(),
             top: 0,
             left: 60,
+            child: XDGreenBalloon2(),
           ),
-          Positioned(child: XDOrangeBalloon(), top: 150, left: 5),
-          Positioned(child: XDYellowBalloon(), top: 90, left: 220),
+          Positioned(top: 150, left: 5, child: XDOrangeBalloon()),
+          Positioned(top: 90, left: 220, child: XDYellowBalloon()),
           Logo(),
-          Center(
+          const Center(
               child: RiveAnimation.asset(
             'animations/dog_flying.riv',
             animations: ['Animation 3'],
@@ -65,10 +58,6 @@ class Home extends StatelessWidget {
           ))
         ],
       ),
-      // ),
-      // );
-      // },
-      // ),
       Padding(
         padding: const EdgeInsets.all(30.0),
         child: Align(

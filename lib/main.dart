@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:my_app/choose_album.dart';
 import 'package:my_app/home.dart';
+import 'package:my_app/timeline.dart';
 import 'firebase_options.dart';
-import 'xd_home.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -38,7 +38,13 @@ class DogTravels extends StatelessWidget {
           body: PageView(
               controller: pageController,
               scrollDirection: Axis.vertical,
-              children: [Home(), ChooseAlbum()]),
+              children: [
+                const Home(),
+                ChooseAlbum(
+                  pageController,
+                ),
+                const Timeline()
+              ]),
         ));
   }
 }

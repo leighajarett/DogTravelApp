@@ -1,16 +1,7 @@
-import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:my_app/old/homepage.dart';
-import 'package:photo_manager/photo_manager.dart';
-import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_core/firebase_core.dart';
 import '../firebase_options.dart';
-import 'package:flutter_absolute_path/flutter_absolute_path.dart';
-import 'package:firebase_storage/firebase_storage.dart';
-import 'package:heic_to_jpg/heic_to_jpg.dart';
-import 'dart:io';
-import 'package:device_info_plus/device_info_plus.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 
 import 'homepage.dart';
 
@@ -32,16 +23,18 @@ void main() async {
   // final storage = FirebaseStorage.instance;
   // final firestore = FirebaseFirestore.instance;
 
-  runApp(DogTravels());
+  runApp(const DogTravels());
 }
 
 class DogTravels extends StatelessWidget {
+  const DogTravels({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "My Dog's World Travels",
       theme: ThemeData(primarySwatch: Colors.green),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
