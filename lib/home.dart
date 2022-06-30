@@ -24,12 +24,12 @@ class Home extends StatelessWidget {
     return Stack(children: [
       Stack(
         children: <Widget>[
-          Positioned(
+          const Positioned(
             top: 460,
             left: 120,
             child: XDPinkBalloon(),
           ),
-          Positioned(
+          const Positioned(
             top: 140,
             left: -80,
             child: XDBigCloud(),
@@ -37,19 +37,20 @@ class Home extends StatelessWidget {
           Positioned(
               top: 0,
               left: 200,
-              child: Transform.rotate(angle: math.pi / 5, child: XDCloud())),
-          Positioned(top: 610, left: 5, child: XDCloud2()),
-          Positioned(top: 740, left: 280, child: XDYellowBalloon2()),
-          Positioned(top: 510, left: 300, child: XDOrangeBalloon2()),
-          Positioned(top: 590, left: 50, child: XDGreenBalloon()),
-          Positioned(
+              child:
+                  Transform.rotate(angle: math.pi / 5, child: const XDCloud())),
+          const Positioned(top: 610, left: 5, child: XDCloud2()),
+          const Positioned(top: 740, left: 280, child: XDYellowBalloon2()),
+          const Positioned(top: 510, left: 300, child: XDOrangeBalloon2()),
+          const Positioned(top: 590, left: 50, child: XDGreenBalloon()),
+          const Positioned(
             top: 0,
             left: 60,
             child: XDGreenBalloon2(),
           ),
-          Positioned(top: 150, left: 5, child: XDOrangeBalloon()),
-          Positioned(top: 90, left: 220, child: XDYellowBalloon()),
-          Logo(),
+          const Positioned(top: 150, left: 5, child: XDOrangeBalloon()),
+          const Positioned(top: 90, left: 220, child: XDYellowBalloon()),
+          const Logo(),
           const Center(
               child: RiveAnimation.asset(
             'animations/dog_flying.riv',

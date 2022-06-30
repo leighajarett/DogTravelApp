@@ -1,14 +1,16 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDGreenBalloon2 extends StatelessWidget {
-  XDGreenBalloon2({
+  const XDGreenBalloon2({
     Key? key,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 90,
       width: 70,
       child: Stack(
@@ -93,7 +95,8 @@ class XDGreenBalloon2 extends StatelessWidget {
                                                   startFraction: 0.0,
                                                   endFraction: 0.0),
                                               child: Container(
-                                                decoration: BoxDecoration(),
+                                                decoration:
+                                                    const BoxDecoration(),
                                               ),
                                             ),
                                           ],
@@ -164,7 +167,8 @@ class XDGreenBalloon2 extends StatelessWidget {
                                                   startFraction: 0.0,
                                                   endFraction: 0.0),
                                               child: Container(
-                                                decoration: BoxDecoration(),
+                                                decoration:
+                                                    const BoxDecoration(),
                                               ),
                                             ),
                                           ],
@@ -198,7 +202,7 @@ class XDGreenBalloon2 extends StatelessWidget {
                             Pin(startFraction: 0.0, endFraction: 0.0),
                             Pin(startFraction: 0.0, endFraction: 0.0),
                             child: Container(
-                              decoration: BoxDecoration(),
+                              decoration: const BoxDecoration(),
                             ),
                           ),
                         ],
@@ -211,7 +215,7 @@ class XDGreenBalloon2 extends StatelessWidget {
                 Pin(startFraction: 0.0, endFraction: 0.0),
                 Pin(startFraction: 0.0, endFraction: 0.0),
                 child: Container(
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                 ),
               ),
             ],

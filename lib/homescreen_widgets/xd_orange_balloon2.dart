@@ -1,20 +1,23 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDOrangeBalloon2 extends StatelessWidget {
-  XDOrangeBalloon2({
+  const XDOrangeBalloon2({
     Key? key,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 80,
       width: 70,
       child: Stack(
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 14.4, vertical: 7.2),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 14.4, vertical: 7.2),
             child: Transform.rotate(
               angle: -0.4712,
               child: Stack(
@@ -120,7 +123,7 @@ class XDOrangeBalloon2 extends StatelessWidget {
                                                           endFraction: 0.0),
                                                       child: Container(
                                                         decoration:
-                                                            BoxDecoration(),
+                                                            const BoxDecoration(),
                                                       ),
                                                     ),
                                                   ],
@@ -221,7 +224,7 @@ class XDOrangeBalloon2 extends StatelessWidget {
                                                           endFraction: 0.0),
                                                       child: Container(
                                                         decoration:
-                                                            BoxDecoration(),
+                                                            const BoxDecoration(),
                                                       ),
                                                     ),
                                                   ],
@@ -250,7 +253,7 @@ class XDOrangeBalloon2 extends StatelessWidget {
                                     Pin(startFraction: 0.0, endFraction: 0.0),
                                     Pin(startFraction: 0.0, endFraction: 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                     ),
                                   ),
                                 ],
@@ -263,7 +266,7 @@ class XDOrangeBalloon2 extends StatelessWidget {
                         Pin(startFraction: 0.0, endFraction: 0.0),
                         Pin(startFraction: 0.0, endFraction: 0.0),
                         child: Container(
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                         ),
                       ),
                     ],

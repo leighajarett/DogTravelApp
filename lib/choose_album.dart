@@ -21,6 +21,7 @@ class Album {
 class ChooseAlbum extends StatefulWidget {
   // const ChooseAlbum({Key? key}) : super(key: key);
   final ScrollController controller;
+  // ignore: use_key_in_widget_constructors
   const ChooseAlbum(this.controller);
 
   @override
@@ -81,17 +82,17 @@ class _ChooseAlbumState extends State<ChooseAlbum> {
       Positioned(
           top: 0,
           left: 200,
-          child: Transform.rotate(angle: math.pi / 5, child: XDCloud())),
-      Positioned(top: 610, left: 5, child: XDCloud2()),
-      Positioned(top: 740, left: 280, child: XDYellowBalloon2()),
-      Positioned(top: 510, left: 300, child: XDOrangeBalloon2()),
-      Positioned(top: 590, left: 50, child: XDGreenBalloon()),
-      Positioned(
+          child: Transform.rotate(angle: math.pi / 5, child: const XDCloud())),
+      const Positioned(top: 610, left: 5, child: XDCloud2()),
+      const Positioned(top: 740, left: 280, child: XDYellowBalloon2()),
+      const Positioned(top: 510, left: 300, child: XDOrangeBalloon2()),
+      const Positioned(top: 590, left: 50, child: XDGreenBalloon()),
+      const Positioned(
         top: 0,
         left: 60,
         child: XDGreenBalloon2(),
       ),
-      Positioned(top: 90, left: 220, child: XDYellowBalloon()),
+      const Positioned(top: 90, left: 220, child: XDYellowBalloon()),
       FutureBuilder(
           future: getAlbums(),
           builder: (BuildContext context, AsyncSnapshot<List<Album>> snapshot) {
@@ -131,7 +132,7 @@ class _ChooseAlbumState extends State<ChooseAlbum> {
                                       softWrap: false,
                                     ),
                                   ),
-                                  const Text(
+                                  Text(
                                       style: TextStyle(
                                           fontFamily: "Roboto", fontSize: 12),
                                       'Choose the album with all the pictures of your dog')

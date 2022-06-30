@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "@google-cloud/vision": "^2.4.2",
-    "firebase-tools": "^10.9.2"
-  },
-  "scripts": {
-    "test": "mocha --reporter spec"
-  }
-}

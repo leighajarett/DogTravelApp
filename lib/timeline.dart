@@ -183,8 +183,8 @@ class _TimelineState extends State<Timeline> {
       Positioned(
           top: 0,
           left: 200,
-          child: Transform.rotate(angle: math.pi / 5, child: XDCloud())),
-      Positioned(top: 610, left: 5, child: XDCloud2()),
+          child: Transform.rotate(angle: math.pi / 5, child: const XDCloud())),
+      const Positioned(top: 610, left: 5, child: XDCloud2()),
       Padding(
         padding: const EdgeInsets.symmetric(vertical: 100.0, horizontal: 30),
         child: Column(
@@ -240,7 +240,7 @@ class _TimelineState extends State<Timeline> {
                     }
                   });
                 },
-                child: XDYellowBalloon2(),
+                child: const XDYellowBalloon2(),
               ),
             )
           : const SizedBox(

@@ -1,14 +1,16 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDPinkBalloon extends StatelessWidget {
-  XDPinkBalloon({
+  const XDPinkBalloon({
     Key? key,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 72.0,
       height: 115.0,
       child: Stack(
@@ -93,7 +95,8 @@ class XDPinkBalloon extends StatelessWidget {
                                                   startFraction: 0.0,
                                                   endFraction: 0.0),
                                               child: Container(
-                                                decoration: BoxDecoration(),
+                                                decoration:
+                                                    const BoxDecoration(),
                                               ),
                                             ),
                                           ],
@@ -182,7 +185,8 @@ class XDPinkBalloon extends StatelessWidget {
                                                   startFraction: 0.0,
                                                   endFraction: 0.0),
                                               child: Container(
-                                                decoration: BoxDecoration(),
+                                                decoration:
+                                                    const BoxDecoration(),
                                               ),
                                             ),
                                           ],
@@ -198,7 +202,7 @@ class XDPinkBalloon extends StatelessWidget {
                             Pin(startFraction: 0.0, endFraction: 0.0),
                             Pin(startFraction: 0.0, endFraction: 0.0),
                             child: Container(
-                              decoration: BoxDecoration(),
+                              decoration: const BoxDecoration(),
                             ),
                           ),
                         ],
@@ -211,7 +215,7 @@ class XDPinkBalloon extends StatelessWidget {
                 Pin(startFraction: 0.0, endFraction: 0.0),
                 Pin(startFraction: 0.0, endFraction: 0.0),
                 child: Container(
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                 ),
               ),
             ],

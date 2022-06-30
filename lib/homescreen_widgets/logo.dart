@@ -4,6 +4,8 @@ import 'package:bordered_text/bordered_text.dart';
 import 'package:flutter/material.dart';
 
 class Logo extends StatelessWidget {
+  const Logo({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -64,7 +66,7 @@ class Logo extends StatelessWidget {
           ),
         ),
         Align(
-          alignment: Alignment(0.4, -0.3),
+          alignment: const Alignment(0.4, -0.3),
           child: SizedBox(
             width: 110.0,
             height: 45.0,
@@ -119,7 +121,7 @@ class Logo extends StatelessWidget {
           ),
         ),
         Align(
-          alignment: Alignment(-0.448, -0.08),
+          alignment: const Alignment(-0.448, -0.08),
           child: SizedBox(
             width: 84.0,
             height: 41.0,
@@ -145,7 +147,7 @@ class Logo extends StatelessWidget {
             child: AnimatedTextKit(
               animatedTexts: [
                 TyperAnimatedText('Your Dog',
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       fontFamily: 'GoodDog New',
                       fontSize: 45,
                       color: Color(0xffea3927),
@@ -158,7 +160,7 @@ class Logo extends StatelessWidget {
           ),
         ),
         Align(
-          alignment: Alignment(-0.467, -0.07),
+          alignment: const Alignment(-0.467, -0.07),
           child: SizedBox(
             width: 28.0,
             height: 55.0,
